@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.sectionServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #c8cfe6 -59.23%, #3c77e9 -20.38%, #1876fc 100%);
+}
+
+.serviciosHeader h2 {
+  color: #fff;
+  font-family: "Days One", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.serviciosHeader p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  /* max-width: 800px; */
+  line-height: 1.5;
+}
+
+.serviciosContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.servicioItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.servicioItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.servicioIcon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.servicioInfoContainer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.servicioInfoContainer p {
+  font-size: 1rem;
+  color: #373737;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .sectionServicios {
+    padding: 2rem 1.5rem;
+  }
+
+  
+
+  .serviciosHeader h2 {
+    font-size: 28px;
+  }
+
+  .serviciosHeader p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .serviciosContent {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .servicioItem {
+    max-width: 100%;
+  }
+
+  .servicioInfoContainer h3 {
+    font-size: 1.25rem;
+  }
+
+  .servicioInfoContainer p {
+    font-size: 0.9rem;
+  }
+}

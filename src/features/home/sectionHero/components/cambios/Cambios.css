@@ -1,0 +1,316 @@
+.cambiosContainer {
+  /* width: 411px;
+height: 425px;
+flex-shrink: 0; 
+border-radius: 40px;
+background: #FFF; */
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 425px;
+  width: 400px;
+  padding: 5px;
+
+  position: relative;
+  z-index: 200;
+  /* se agrego esto para que este el componente por encima */
+}
+
+.cambioRates {
+  display: flex;
+  width: 334px;
+  height: 65px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-shrink: 0;
+}
+
+.rateInfo {
+  flex: 1 0 0;
+
+  .rateTitle {
+    color: #b1b1b1;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .rateValue {
+    color: #1a2345;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+.envioSection {
+  display: flex;
+  width: 317px;
+  height: 88px;
+  padding: 23px 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+
+  .envioInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .envioTitle {
+      color: #b1b1b1;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      /* border: 1px solid red; */
+      width: 150px;
+    }
+
+    .envioValue {
+      color: #000;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+
+.iconContainer {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-right: 90px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.recibeSection {
+  display: flex;
+  width: 317px;
+  height: 88px;
+  padding: 23px 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+
+  .recibeInfo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .recibeTitle {
+      color: #b1b1b1;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .recibeValue {
+      color: #000;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+
+.currencyInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.cambioButton {
+  background: #1a2345 !important;
+  color: white !important;
+  width: 200px;
+  margin-top: 15px;
+}
+
+@media (max-width: 1336px) {
+  .iconContainer {
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cambiosContainer{
+    height: 370px;
+    width: 330px;
+  }
+
+  .cambioRates {
+    display: flex;
+    width: 334px;
+    height: 65px;
+    padding: 10px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+
+
+  .rateInfo {  
+    .rateTitle {
+      color: #b1b1b1;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }}
+
+    .heroTextContainer{
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      h1{
+        font-size: 1.8rem;
+      }
+    }
+
+
+    .envioSection {
+      display: flex;
+      width: 280px;
+      height: 80px;
+      padding: 23px 27px;
+      justify-content: space-around;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #dadada;
+
+      .envioInfo {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .envioTitle {
+          color: #b1b1b1;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          /* border: 1px solid red; */
+          width: 150px;
+        }
+    
+        .envioValue {
+          color: #000;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+
+    .recibeSection {
+      display: flex;
+      width: 280px;
+      height: 80px;
+      padding: 23px 27px;
+      justify-content: space-around;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #dadada;
+    
+      .recibeInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .recibeTitle {
+          color: #b1b1b1;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          width: 150px;
+
+        }
+    
+        .recibeValue {
+          color: #000;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+    .heroButton{
+      display: none !important;
+    }
+
+    .heroImages{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .backgroundImage{
+        display: none !important;
+      }
+    }
+
+    .iconContainer {
+      display: none;
+    }
+
+    .cambioButton {
+      background: #1a2345 !important;
+      color: white !important;
+      width: 150px;
+      margin-top: 15px;
+      font-size: 12px !important;
+    }
+}
+
+
+

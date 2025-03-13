@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.sectionPasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 60px;
+}
+
+.sectionPasos h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  color: #040404;
+  font-family: "Days One";
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sectionPasosSteps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 82px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+.sectionPasosStep {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.sectionPasosStep img {
+  width: 235px;
+  height: 246px;
+}
+
+.sectionPasosContent h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sectionPasosContent p {
+  color: #4a4a4a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sectionPasosButton {
+  margin-top: 30px;
+  width: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #1a2345 !important;
+  color: #fff !important;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+/* Responsive Styles for 768px and 480px */
+@media (max-width: 768px) {
+  .sectionPasos {
+    padding: 20px 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .sectionPasosSteps {
+    gap: 40px;
+  }
+
+  .sectionPasosStep {
+    width: 220px;
+  }
+
+  .sectionPasosStep img {
+    width: 200px;
+    height: 210px;
+  }
+
+  .sectionPasosContent h3 {
+    font-size: 18px;
+  }
+
+  .sectionPasosContent p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionPasos {
+    padding: 20px 20px;
+  }
+
+  .sectionPasos h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sectionPasosSteps {
+    gap: 20px;
+  }
+
+  .sectionPasosStep {
+    width: 100%;
+  }
+
+  .sectionPasosStep img {
+    width: 180px;
+    height: 190px;
+  }
+
+  .sectionPasosContent h3 {
+    font-size: 16px;
+  }
+
+  .sectionPasosContent p {
+    font-size: 12px;
+  }
+
+  .sectionPasosButton {
+    width: 180px;
+    font-size: 14px;
+  }
+}

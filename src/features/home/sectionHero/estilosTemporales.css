@@ -1,0 +1,76 @@
+.sectionHero {
+  display: flex;
+  flex-direction: column;
+  padding: 66px 126px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #1876FC 42.95%, #88B9FF 71.48%, #2F6ABE 100%);
+  position: relative;
+  max-width: 1200px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heroTextContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+h1 {
+  color: #1a2345;
+  font-family: "Days One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.highlight {
+  color: #ffffff;
+}
+
+.heroImages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.Cambios {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.personImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}

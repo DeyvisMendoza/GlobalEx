@@ -1,0 +1,146 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2345;
+  padding: 25px;
+  gap: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #378aff;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.logo-text {
+  margin-top: -15px;
+  z-index: 1;
+  background-color: #1a2345;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+h3 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.logos {
+  display: flex;
+  gap: 100px;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logos img {
+  filter: brightness(0) invert(1);
+}
+
+.logo-bcp {
+  width: 100px;
+}
+
+.logo-interbank {
+  width: 140px;
+}
+
+.logo-bbva {
+  width: 100px;
+}
+
+.logo-scotiabank {
+  width: 135px;
+}
+
+.logo-banbif {
+  width: 100px;
+}
+
+@media (max-width: 1338px) {
+  .logos {
+    gap: 50px;
+    padding: 15px;
+  }
+
+  .logo-bcp,
+  .logo-bbva,
+  .logo-banbif {
+    width: 80px;
+  }
+
+  .logo-interbank,
+  .logo-scotiabank {
+    width: 100px;
+  }
+
+}
+
+/* Responsive Styles for 768px and 480px */
+@media (max-width: 768px) {
+  .logos {
+    gap: 50px;
+    padding: 15px;
+  }
+
+  .logo-bcp,
+  .logo-bbva,
+  .logo-banbif {
+    width: 80px;
+  }
+
+  .logo-interbank,
+  .logo-scotiabank {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos {
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .logo-bcp,
+  .logo-bbva,
+  .logo-banbif {
+    width: 70px;
+  }
+
+  .logo-interbank,
+  .logo-scotiabank {
+    width: 85px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}

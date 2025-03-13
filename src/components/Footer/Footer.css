@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+/* Estilos base */
+.footer {
+  display: flex;
+  padding: 26px 62px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #1a2345;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 100px;
+}
+
+.footerAbout {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+
+
+}
+
+p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footerHours {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  h4 {
+    color: #fff;
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.footerSocialAndContact {
+  display: flex;
+  width: 185px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  align-self: stretch;
+
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.contactText {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.logoImage {
+  width: 200px;
+}
+
+.iconImage {
+  width: 30px;
+}
+
+/* Media Queries para Responsividad */
+/* @media (max-width: 1024px) {
+  .footerContainer {
+    gap: 50px;
+  }
+
+  .footerAbout, .footerSocialAndContact {
+    width: 200px;
+  }
+
+  .contactText {
+    font-size: 12px;
+  }
+} */
+
+@media (max-width: 890px) {
+  .footerAbout, .footerSocialAndContact, .footerHours {
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .logoImage {
+    width:  px;
+  }
+
+  .footerHours:nth-of-type(2){
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footerAbout, .footerSocialAndContact, .footerHours {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socialIcons{
+    justify-content: center;
+    }
+
+  .contactInfo{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactIcon{
+  text-align: center;
+  }
+
+  .footerHours{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footerHours h4 {
+    font-size: 12px;
+  }
+
+  .contactText {
+    font-size: 12px;
+  }
+
+  .footerLogo {
+    img{
+      width: 200px !important;
+    }
+  }
+
+  .footerHours:nth-of-type(2){
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 30px;
+  }
+
+  .footerAbout, .footerSocialAndContact, .footerHours {
+    width: 100%;
+    align-items: start;
+    text-align: start;
+  }
+
+  .footerContainer {
+    gap: 1px;
+  }
+
+
+  .socialIcons{
+    align-items: start;
+    justify-content: start;
+  }
+  .contactInfo {
+    align-items: start;
+    align-self: stretch;
+  
+  }
+
+  .footerAbout p, .footerHours h4, .contactText {
+    font-size: 11px;
+  }
+
+  .logoImage {
+    width: 170px;
+  }
+
+  .iconImage {
+    width: 28px;
+  }
+
+  /* Selecciona el segundo .footerHours */
+
+  .footerHours:nth-of-type(2){
+    display: none;
+  }
+}

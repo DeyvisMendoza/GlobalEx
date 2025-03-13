@@ -1,0 +1,123 @@
+.sectionHomeMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionHome {
+  display: flex;
+  padding: 90px 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1300px;
+}
+
+.sectionHome img {
+  width: 421px;
+  flex-shrink: 0;
+}
+
+.sectionHomeTitle {
+  align-self: stretch;
+  color: #378aff;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sectionHomeDescription {
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Responsive Styles */
+@media (max-width: 1336px) {
+  .sectionHome {
+    padding: 70px 150px; /* Adjust padding for larger screens */
+  }
+
+  .sectionHomeTitle {
+    font-size: 34px; /* Slightly reduce font size */
+  }
+
+  .sectionHomeDescription {
+    font-size: 15px; /* Slightly reduce font size */
+  }
+}
+
+@media (max-width: 1070px) {
+  .sectionHome {
+    padding: 60px 100px; /* Reduce padding further */
+  }
+
+  .sectionHome img {
+    width: 350px; /* Reduce image size */
+  }
+
+  .sectionHomeTitle {
+    font-size: 32px;
+  }
+
+  .sectionHomeDescription {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 975px) {
+  .sectionHome {
+    padding: 50px 80px;
+    gap: 15px; /* Adjust gap between elements */
+  }
+
+  .sectionHome img {
+    width: 320px; /* Reduce image size further */
+  }
+
+  .sectionHomeTitle {
+    font-size: 30px;
+  }
+
+  .sectionHomeDescription {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHome {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 40px 60px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .sectionHome img {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Optional max-width */
+  }
+
+  .sectionHomeTitle {
+    font-size: 28px;
+  }
+
+  .sectionHomeDescription {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHome {
+    padding: 25px 20px 55px 20px; /* Further reduce padding */
+  }
+
+  .sectionHomeTitle {
+    font-size: 24px; /* Further reduce title size */
+  }
+
+  .sectionHomeDescription {
+    font-size: 12px; /* Keep font size small but readable */
+  }
+}
